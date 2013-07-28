@@ -8,3 +8,5 @@ tmp/
 *.swp
 .redcar
 bin/
+public/coverage/rspec/
+public/coverage/cucumber/

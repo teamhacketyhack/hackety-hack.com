@@ -56,4 +56,6 @@ group :test do
   gem "mocha"
   gem "database_cleaner"
   gem "launchy"
+  gem "simplecov", :require => false
+  gem 'Capybara'
 end
