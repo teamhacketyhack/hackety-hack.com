@@ -4,7 +4,7 @@
 
 [hackety-hack.com][hh.com] is the web backend powering the collaborative features of [Hackety Hack][hh]. It is written in Rails 3 and continues to be under active development (see 'Helping Out'), the switch to Rails 3 happened quite recently so there's still lots to be done.
 
-........
+............this is a test.............
 
 ## Helping Out ##
 
