@@ -1,4 +1,5 @@
 class AuthenticationsController < ApplicationController
+<<<<<<< HEAD
   def all
   	auth = request.env['omniauth.auth']
   	authentication = User.first.authentications.where(:provider => auth['provider'], :uid => auth['uid']).first
@@ -44,4 +45,18 @@ class AuthenticationsController < ApplicationController
   	end
   end 	
 
+=======
+  def index
+  end
+
+  def create
+    auth = request.env["omniauth.auth"] current_user.authentications.create(:provider => auth['provider'], :uid => auth['uid']) flash[:notice] = "authentication successful."
+    redirect_to => authentications_url   
+# render :text => request.env["omniauth.auth"].to_yaml
+  end
+
+  def destroy
+  end
+  
+>>>>>>> ca2e9c461bca673a654d93279f02e80e922e8332
 end

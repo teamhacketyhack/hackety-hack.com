@@ -3,7 +3,7 @@
 
 .sign-in
   = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
-    .inputs
+    .inputs  
       = link_to image_tag("authbuttons/github_32.png", :size => "32x32"), "/users/auth/github", :id => 'github_login'
       = link_to image_tag("authbuttons/twitter_32.png", :size => "32x32"), "/users/auth/twitter", :id => 'twitter_login'
       = link_to image_tag("authbuttons/facebook_32.png", :size => "32x32"), "/users/auth/facebook", :id => 'facebook_login'
