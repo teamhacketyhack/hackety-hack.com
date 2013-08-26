@@ -1,6 +1,8 @@
-<<<<<<< HEAD
 OmniAuth.config.logger = Rails.logger
 Rails.application.config.middleware.use OmniAuth::Builder do |variable|
+  #puts "builder: #{require 'omniauth/builder'}", OmniAuth::Builder #"  
+  #Rails.application.config.middleware.use OmniAuth::Builder do |variable|
+  #provider :developer unless Rails.env.production?
   provider :github
   provider :twitter
   #provider :linkedin
@@ -8,12 +10,6 @@ Rails.application.config.middleware.use OmniAuth::Builder do |variable|
   #provider :google
   #provider :yahoo
   #provider :openid	
-end
-=======
-puts "builder: #{require 'omniauth/builder'}", OmniAuth::Builder #"  
-
-Rails.application.config.middleware.use OmniAuth::Builder do |variable|
-  #provider :developer unless Rails.env.production?
 
   provider :twitter, ENV['HH_TWITTER_KEY'], ENV['HH_TWITTER_SECRET']
   provider :github, ENV['HH_GITHUB_KEY'], ENV['HH_GITHUB_SECRET']
@@ -23,5 +19,10 @@ Rails.application.config.middleware.use OmniAuth::Builder do |variable|
 # provider :google, ENV['HH_GOOGLE_KEY'], ENV['HH_GOOGLE_SECRET']
 # PROVIDER :openid, ENV['HH_OPID_KEY'], ENV['HH_OPID_SECRET']   
 
-end 
->>>>>>> ca2e9c461bca673a654d93279f02e80e922e8332
+
+end
+
+
+
+  
+
