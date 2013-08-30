@@ -5,10 +5,10 @@ Rails.application.config.middleware.use OmniAuth::Builder do |variable|
   #provider :developer unless Rails.env.production?
   provider :github
   provider :twitter
-  #provider :linkedin
-  #provider :facebook
-  #provider :google
-  #provider :yahoo
+  provider :linkedin
+  provider :facebook
+  provider :google
+  provider :yahoo
   #provider :openid	
 
   provider :twitter, ENV['HH_TWITTER_KEY'], ENV['HH_TWITTER_SECRET']
