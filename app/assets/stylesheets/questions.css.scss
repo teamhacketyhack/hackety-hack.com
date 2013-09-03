@@ -11,17 +11,9 @@
     padding-bottom: 0.75em;
   }
 }
- #unansweredbutton {
-   border-radius: 17px 17px 17px 17px;
-   -moz-border-radius: 17px 17px 17px 17px;
-   -webkit-border-radius: 17px 17px 17px 17px;
-   border: 2px solid #8000000  
- }
- 
+
 .questions {
   margin: 0;
-  
-
   li {
     @include clearfix;
     list-style-type: none;
